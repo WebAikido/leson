@@ -31,6 +31,53 @@ store = {
     ],
 }
 
+
+tables_code = goods['Стол']
+tables_item = store[tables_code][0]
+tables_quantity1 = tables_item['quantity']
+tables_price = tables_item['price']
+tables_cost = tables_quantity1 * tables_price
+
+tables_item = store[tables_code][1]
+tables_quantity2 = tables_item['quantity']
+tables_price = tables_item['price']
+tables_cost += tables_quantity2 * tables_price
+tables_total = tables_quantity1 + tables_quantity2
+print('Столы - ', tables_total, 'шт, стоимость', tables_cost, 'руб')
+
+
+sofa_code = goods['Диван']
+sofa_item = store[sofa_code][0]
+sofa_quantity1 = sofa_item['quantity']
+sofa_price = sofa_item['price']
+sofa_cost = sofa_quantity1 * sofa_price
+sofa_item = store[sofa_code][1]
+sofa_quantity2 = sofa_item['quantity']
+sofa_price = sofa_item['price']
+sofa_cost += sofa_quantity2 * sofa_price
+sofa_total = sofa_quantity1 + sofa_quantity2
+print('Диваны - ', sofa_total, 'шт, стоимость', sofa_cost, 'руб')
+
+chair_code = goods['Стул']
+chair_item = store[chair_code][0]
+chair_quantity1 = chair_item['quantity']
+chair_price = chair_item['price']
+chair_cost = chair_quantity1 * chair_price
+
+chair_item = store[chair_code][1]
+chair_quantity2 = chair_item['quantity']
+chair_price = chair_item['price']
+chair_cost += chair_quantity2 * chair_price
+
+
+chair_item = store[chair_code][2]
+chair_quantity3 = chair_item['quantity']
+chair_price = chair_item['price']
+chair_cost += chair_quantity3 * chair_price
+chair_total = chair_quantity1 + chair_quantity2 + chair_quantity3
+print('Стул - ', chair_total, 'шт, стоимость', chair_cost, 'руб')
+
+
 # Рассчитать на какую сумму лежит каждого товара на складе
 # например для ламп
 
@@ -48,9 +95,6 @@ print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, '�
 
 # WARNING для знающих циклы: БЕЗ циклов. Да, с переменными; да, неэффективно; да, копипаста.
 # Это задание на ручное вычисление - что бы потом понять как работают циклы и насколько с ними проще жить.
-
-# TODO здесь ваш код
-
 ##########################################################################################
 # ВНИМАНИЕ! После того как __ВСЯ__ домашняя работа сделана и запушена на сервер,         #
 # нужно зайти в ЛМС (LMS - Learning Management System ) по адресу http://go.skillbox.ru  #
