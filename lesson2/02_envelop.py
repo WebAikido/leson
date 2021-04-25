@@ -10,17 +10,20 @@
 # Использовать только операторы if/elif/else, можно вложенные
 
 envelop_x, envelop_y = 10, 7
-paper_x, paper_y = 8, 9
+paper_x, paper_y = 7, 4
 # проверить для
-# paper_x, paper_y = 9, 8
-# paper_x, paper_y = 6, 8
-# paper_x, paper_y = 8, 6
-# paper_x, paper_y = 3, 4
-# paper_x, paper_y = 11, 9
-# paper_x, paper_y = 9, 11
+paper_x, paper_y = 9, 8
+paper_x, paper_y = 6, 8
+paper_x, paper_y = 8, 6
+paper_x, paper_y = 3, 4
+paper_x, paper_y = 11, 9
+paper_x, paper_y = 9, 11
 # (просто раскоментировать нужную строку и проверить свой код)
 
-# TODO здесь ваш код
+if paper_x > envelop_x or paper_x > envelop_y or paper_y > envelop_x or paper_y > envelop_y:
+    print('Нет')
+else:
+    print('Да')
 
 # Усложненное задание, решать по желанию.
 # Заданы размеры hole_x, hole_y прямоугольного отверстия и размеры brick_х, brick_у, brick_z кирпича (все размеры
