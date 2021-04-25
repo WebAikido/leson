@@ -10,5 +10,18 @@
 #   Студенту надо попросить ХХХ.ХХ рублей
 
 educational_grant, expenses = 10000, 12000
-
-# TODO здесь ваш код
+x = 0
+loan = None
+expenses_next_month = 0
+while x < 10:
+    x += 1
+    print(x)
+    educational_grant_year = educational_grant * x
+    print(educational_grant_year)
+    expenses_year = expenses + expenses_next_month
+    print(expenses_year)
+    expenses_next_month = expenses + (expenses/100*3)
+    expenses = expenses_next_month
+    print(expenses_next_month)
+    expenses_year = expenses + expenses_next_month
+    print(expenses_year)
