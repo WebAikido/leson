@@ -18,8 +18,6 @@ while x < 10:
     print(x)
     educational_grant_year = educational_grant * x
     print(educational_grant_year)
-    expenses_year = expenses + expenses_next_month
-    print(expenses_year)
     expenses_next_month = expenses + (expenses/100*3)
     expenses = expenses_next_month
     print(expenses_next_month)
