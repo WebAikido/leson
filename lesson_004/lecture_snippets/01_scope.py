@@ -33,7 +33,7 @@ def simple_2():
 
 simple()
 simple_2()
-print('global:', c + d)
+# print('global:', c + d)
 
 # Операторы управления потоком не создают локального пространства имен
 if 2 > 1:
