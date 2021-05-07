@@ -102,9 +102,7 @@ def hexagon(point, angle=30, length=100):
     v1 = sd.get_vector(start_point=point, angle=angle, length=length, width=3)
     v1.draw()
     return v1.end_point
-    # next_point = v1.end_point
-    # next_angle = angle + delta
-    # hexagon(point=next_point, angle=next_angle, length=length, delta=delta)
+
 
 
 next_point = sd.get_point(300, 300)
@@ -115,7 +113,7 @@ def drawing_polygon(number_of_parties, next_point):
         next_point = hexagon(point=next_point, angle=angle)
 
 
-drawing_polygon(9, next_point=next_point)
+drawing_polygon(3, next_point=next_point)
 
 # sd.line(point2, point1, width=2)
 # Часть 1-бис.
