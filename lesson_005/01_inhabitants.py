@@ -5,4 +5,11 @@
 
 # TODO здесь ваш код
 
+import room_1
+import room_2
 
+for i in room_1.folks:
+    print('В комнате',room_1, 'живут:', i)
+
+for i in room_2.folks:
+    print('В комнате room_1 живут:', i)
